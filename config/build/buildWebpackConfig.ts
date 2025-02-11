@@ -20,7 +20,7 @@ export default function buildWebpackConfig(options: BuildOptions): webpack.Confi
         module: {
             rules: buildLoaders(options),
         },
-        resolve: buildResolvers(),
+        resolve: buildResolvers(options),
         // while mode dev there will be sourceMap in build files(which are not needed for prod)
         devServer: isDev ? buildDevServer(options) : void 0,
         devtool: isDev ? 'inline-source-map' : void 0,

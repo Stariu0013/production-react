@@ -1,5 +1,5 @@
 import React, {FC, useMemo} from 'react';
-import {LOCAL_STORAGE_THEME_KEY, ThemeContext, ThemeModes} from "./ThemeContext";
+import {LOCAL_STORAGE_THEME_KEY, ThemeContext, ThemeModes} from "app/providers/ThemeProvider/lib/ThemeContext";
 
 const ThemeProvider: FC = ({ children }) => {
     const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as ThemeModes || ThemeModes.DARK;
