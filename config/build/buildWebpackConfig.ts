@@ -18,7 +18,7 @@ export default function buildWebpackConfig(options: BuildOptions): webpack.Confi
         },
         plugins: buildPlugins(options),
         module: {
-            rules: buildLoaders(),
+            rules: buildLoaders(options),
         },
         resolve: buildResolvers(),
         // while mode dev there will be sourceMap in build files(which are not needed for prod)

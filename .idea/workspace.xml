@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddb5bcc2-d11c-4c78-8a2b-572e9ae0e7fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bundle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bundle/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bundle/main.4bf2671567ff2de536ab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundle/main.074a3e068a144a73015e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/build/buildDevServer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/build/buildDevServer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/build/buildLoaders.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/build/buildLoaders.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/build/buildPlugins.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/build/buildPlugins.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/build/buildWebpackConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/build/buildWebpackConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/build/types/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/build/types/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.ts" afterDir="false" />
     </list>
@@ -31,26 +38,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/work/production-project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "ts.external.directory.path": "D:\\work\\production-project\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ulbi/Ulbi Продвинутый react WEBRIP/1. Webpack. Введение в арх-ру. Code splitting. Css Modules/7 Организация стилей. Добавляем темы/production_project_code_source-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\work\\production-project\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\production-project\src\pages\MainPage" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\production-project\src" />
+      <recent name="D:\work\production-project\src\assets\fonts" />
+      <recent name="D:\work\production-project\src\assets" />
+      <recent name="D:\work\production-project\src\styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,7 +100,10 @@
       <updated>1739095889714</updated>
       <workItem from="1739095890833" duration="4743000" />
       <workItem from="1739100675415" duration="789000" />
-      <workItem from="1739108563058" duration="972000" />
+      <workItem from="1739108563058" duration="2954000" />
+      <workItem from="1739169672550" duration="3667000" />
+      <workItem from="1739208718319" duration="6955000" />
+      <workItem from="1739280000291" duration="1023000" />
     </task>
     <servers />
   </component>
