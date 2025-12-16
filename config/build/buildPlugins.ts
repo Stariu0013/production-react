@@ -15,7 +15,8 @@ function buildPlugins({paths, isDev}: BuildOptions): webpack.WebpackPluginInstan
         }),
         new webpack.DefinePlugin({
             __IS_DEV__: isDev
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ]
 }
 
