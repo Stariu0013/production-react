@@ -5,6 +5,7 @@ import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
 import {Sidebar} from "widgets/Sidebar";
 import React, {Suspense} from "react";
+import PageLoader from "widgets/PageLoader/PageLoader";
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
 
     return (
         <div className={classNames('app', {hovered: true, selectable: true}, [theme])}>
-            <Suspense fallback={<div>Loading</div>}>
+            <Suspense fallback={<PageLoader />}>
                 <Navbar/>
 
                 <div className="content-page">
