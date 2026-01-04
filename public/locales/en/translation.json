@@ -2,5 +2,8 @@
   "Переклад": "Translate",
   "Тест": "Test",
   "Мова": "English",
-  "Сторінки не знайдено": "Page not found"
+  "Сторінки не знайдено": "Page not found",
+  "Трапилася неочікувана помилка": "Unexpected error occurred",
+  "Перезагрузити сторінку": "Reload page",
+  "Ввійти": "Ввійти"
 }

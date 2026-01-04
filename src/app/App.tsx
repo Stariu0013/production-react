@@ -1,18 +1,19 @@
-import './styles/index.scss';
 import {classNames} from "shared/lib/classNames/classNames";
 import {useTheme} from "app/providers/ThemeProvider";
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
 import {Sidebar} from "widgets/Sidebar";
-import React, {Suspense} from "react";
+import React, {Suspense, useState} from "react";
 import PageLoader from "widgets/PageLoader/PageLoader";
+import Modal from "shared/ui/Modal/Modal";
 
 
 const App = () => {
     const {theme} = useTheme();
 
+
     return (
-        <div className={classNames('app', {hovered: true, selectable: true}, [theme])}>
+        <div className={classNames('app', {}, [theme])}>
             <Suspense fallback={<PageLoader />}>
                 <Navbar/>
 
