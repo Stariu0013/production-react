@@ -1,7 +1,9 @@
+import Counter from "../../../entities/Counter/ui/Counter";
+
 const MainPage = () => {
     return (
         <div>
-            MAIN PAGE
+            <Counter />
         </div>
     );
 };
