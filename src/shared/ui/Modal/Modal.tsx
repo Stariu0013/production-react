@@ -8,12 +8,15 @@ type ModalProps = {
     className?: string;
     isOpen?: boolean;
     onClose?: () => void;
+    lazy?: boolean;
 };
 
 const MODAL_CLOSE_TIMEOUT = 300;
 
-const Modal = ({className, children, onClose, isOpen}: ModalProps) => {
+const Modal = ({className, children, onClose, isOpen, lazy}: ModalProps) => {
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
+
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
     const mods = {
@@ -31,15 +34,21 @@ const Modal = ({className, children, onClose, isOpen}: ModalProps) => {
             }, MODAL_CLOSE_TIMEOUT);
         }
     }, [onClose]);
+
     const handleContentClick = (e: React.MouseEvent) => {
         e.stopPropagation();
     };
-
     const onKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') {
             closeModal();
         }
     }, [closeModal]);
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
 
     useEffect(() => {
         if (isOpen) {
@@ -51,6 +60,10 @@ const Modal = ({className, children, onClose, isOpen}: ModalProps) => {
             window.removeEventListener('keydown', onKeyDown);
         }
     }, [isOpen, onKeyDown]);
+
+    if (lazy && !isMounted) {
+        return null;
+    }
 
     return (
         <Portal>
