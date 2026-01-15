@@ -13,3 +13,8 @@
     margin-top: 20px;
     margin-left: auto;
 }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

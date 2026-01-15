@@ -3,14 +3,20 @@ import {useTheme} from "app/providers/ThemeProvider";
 import {AppRouter} from "app/providers/router";
 import {Navbar} from "widgets/Navbar";
 import {Sidebar} from "widgets/Sidebar";
-import React, {Suspense, useState} from "react";
+import React, {Suspense, useEffect, useState} from "react";
 import PageLoader from "widgets/PageLoader/PageLoader";
 import Modal from "shared/ui/Modal/Modal";
+import {useDispatch} from "react-redux";
+import {userActions} from "entities/User";
 
 
 const App = () => {
     const {theme} = useTheme();
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+        dispatch(userActions.initAuthData());
+    }, [dispatch]);
 
     return (
         <div className={classNames('app', {}, [theme])}>
